@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="whatever">
+<html lang="en" ng-app="masonTest">
 <head>
 	<meta charset="UTF-8">
 	<title>Node Sample App</title>
@@ -15,6 +15,11 @@
 <div class="container-fluid">
 	<div class="jumbotron">
 		<h1>{{'I' + ' love' + ' you' +  ' Pooja' + ' - Mason'}}</h1>
+	</div>
+</div>
+<div class="container-fluid" ng-controller="testController as test">
+	<div class="jumbotron">
+		<h1>Test: {{test.foo}} {{23}}</h1>
 	</div>
 </div>
 </body>
