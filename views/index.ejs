@@ -18,8 +18,8 @@
 	</div>
 </div>
 <div class="container-fluid" ng-controller="testController as test">
-	<div class="jumbotron">
-		<h1>Test: {{test.foo}} {{23}}</h1>
+	<div class="jumbotron" ng-repeat="car in test.cars">
+		<h1>Test: {{car.name}}</h1>
 	</div>
 </div>
 </body>
